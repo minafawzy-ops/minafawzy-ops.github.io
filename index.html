@@ -3,90 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourName - Portfolio</title>
+    <title>[YourName]</title>
     <style>
-        /* Simple, clean CSS */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #1a1a1a;
+            background: url('https://i.imgur.com/4gX5gXJ.jpeg') no-repeat center/cover;
+            min-height: 100vh;
             color: #fff;
-            line-height: 1.6;
+            overflow-x: hidden;
         }
-        header {
-            background: #333;
-            padding: 1rem;
+        h1 {
+            font-size: 2.5rem;
+            color: #00ccff;
             text-align: center;
+            padding: 2rem 0;
+            text-shadow: 0 0 10px #00ccff;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            color: #00ccff;
-        }
-        nav {
-            margin-top: 0.5rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1.1rem;
-        }
-        nav a:hover {
-            color: #00ccff;
-        }
-        section {
-            padding: 2rem;
-            max-width: 800px;
+        .container {
+            max-width: 900px;
             margin: 0 auto;
+            padding: 1rem;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            animation: float 6s ease-in-out infinite;
+            box-shadow: 0 0 20px rgba(0, 204, 255, 0.3);
         }
         h2 {
+            font-size: 1.5rem;
             color: #00ccff;
-            font-size: 1.8rem;
-            border-bottom: 2px solid #00ccff;
-            padding-bottom: 0.5rem;
+            margin-top: 0;
         }
         p {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            margin: 0.5rem 0;
         }
-        .portfolio-item {
-            margin: 1rem 0;
+        a {
+            color: #00ccff;
+            text-decoration: none;
         }
-        /* Mobile-friendly */
+        a:hover {
+            text-decoration: underline;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
         @media (max-width: 600px) {
-            header h1 { font-size: 1.5rem; }
-            nav a { display: block; margin: 0.5rem 0; }
-            section { padding: 1rem; }
-            h2 { font-size: 1.5rem; }
-            p { font-size: 1rem; }
+            h1 { font-size: 1.8rem; }
+            .box { padding: 1rem; }
+            h2 { font-size: 1.2rem; }
+            p { font-size: 0.9rem; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>YourName</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Yo, I’m YourName—a chill dude who’s into building cool stuff. I mess around with code, websites, and whatever else catches my vibe. I like keeping things simple but dope, and I’m all about making things that just work, no drama.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <p><strong>Website Thing</strong> - obile and PC.</p>
+    <h1>[YourName]</h1>
+    <div class="container">
+        <div class="box">
+            <h2>About Me</h2>
+            <p>I’m [YourName]. I fuck with 3D modeling and mobile app coding. My shit’s built to work and look sick, no matter the screen.</p>
         </div>
-        <div class="portfolio-item">
-            <p><strong>Cool Project</strong> - random coding stuff—hit.</p>
+        
+        <div class="box">
+            <h2>Portfolio</h2>
+            <p><strong>3D Modeling</strong> - Crafted some killer models. Check one out <a href="https://your-3d-link-here.com" target="_blank">here</a>.</p>
+            <p><strong>Mobile Apps</strong> - Coded apps that run smooth. Download one <a href="https://your-app-link-here.com" target="_blank">here</a>.</p>
+            <p><strong>Tech Vibes</strong> - Hosted this on GitHub Pages for free. See more <a href="https://github.com/[YourGitHubUsername]" target="_blank">on my GitHub</a>.</p>
         </div>
-        <div class="portfolio-item">
-            <p><strong>More Skills</strong> - I’ve got experience.</p>
-        </div>
-    </section>
+    </div>
 </body>
 </html>
