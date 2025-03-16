@@ -1,10 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourName - Portfolio</title>
+    <style>
+        /* Simple, clean CSS */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #00ccff;
+        }
+        nav {
+            margin-top: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #00ccff;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #00ccff;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #00ccff;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        .portfolio-item {
+            margin: 1rem 0;
+        }
+        /* Mobile-friendly */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            nav a { display: block; margin: 0.5rem 0; }
+            section { padding: 1rem; }
+            h2 { font-size: 1.5rem; }
+            p { font-size: 1rem; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Yo, this is my website!</h1>
-    <p>Built it free with GitHub Pages, bro.</p>
+    <header>
+        <h1>YourName</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Yo, I’m YourName—a chill dude who’s into building cool stuff. I mess around with code, websites, and whatever else catches my vibe. I like keeping things simple but dope, and I’m all about making things that just work, no drama.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <p><strong>Website Thing</strong> - obile and PC.</p>
+        </div>
+        <div class="portfolio-item">
+            <p><strong>Cool Project</strong> - random coding stuff—hit.</p>
+        </div>
+        <div class="portfolio-item">
+            <p><strong>More Skills</strong> - I’ve got experience.</p>
+        </div>
+    </section>
 </body>
 </html>
